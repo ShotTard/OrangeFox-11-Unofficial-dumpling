@@ -45,10 +45,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Crypto
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
-TARGET_HW_DISK_ENCRYPTION := false
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
+#TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+#TARGET_HW_DISK_ENCRYPTION := false
+#TW_INCLUDE_CRYPTO := true
+#TW_INCLUDE_CRYPTO_FBE := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 
@@ -105,8 +105,8 @@ TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
 
 # Init properties from bootloader version
-TARGET_INIT_VENDOR_LIB := libinit_cheeseburger
-TARGET_RECOVERY_DEVICE_MODULES := libinit_cheeseburger
+TARGET_INIT_VENDOR_LIB := libinit_cheeseburger_dumpling
+TARGET_RECOVERY_DEVICE_MODULES := libinit_cheeseburger_dumpling
 
 #Extra
 BOARD_SUPPRESS_SECURE_ERASE := true
